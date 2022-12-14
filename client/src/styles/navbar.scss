@@ -1,0 +1,117 @@
+$navyColor: #112d4e;
+$blueColor: #3f72af;
+$navbarButtonColor: #afb4b8;
+$navbarColor: #e5f7ef;
+
+#navbar,
+#mobile-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 0.5rem;
+}
+
+#navbar {
+  background-color: $navbarColor;
+  top: 0;
+  display: flex;
+  align-items: center;
+
+  .left {
+    display: flex;
+    
+    .navbar-button {
+      margin: 0 1rem;
+    }
+
+    #header-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+#mobile-navbar {
+  z-index: 999 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0!important;
+  width: 100% !important;
+  background-color: $navyColor;
+
+  .row {
+    .left,
+    .right {
+      // left and right mobile navbar section
+      justify-content: center;
+      display: flex;
+    }
+    .center {
+      // center mobile navbar section
+      justify-content: center;
+      display: flex;
+      position: relative;
+    }
+  }
+}
+
+.navbar-button {
+  font-size: 1.3rem;
+  border: none;
+  color: $navbarButtonColor;
+  background-color: inherit !important;
+
+  &:hover {
+    color: $navyColor;
+    font-size: 1.4rem;
+    transition: color linear 0.3s;
+  }
+}
+
+#dropdown-menu-align {
+  border: none;
+  color: $navbarButtonColor;
+  background-color: inherit;
+
+  &:focus {
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+  }
+}
+
+#mobile-navbar-button {
+  position: absolute;
+  bottom: .5rem;
+  background-color: $blueColor;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  border: 0.3rem solid #fff;
+  width: 4.5rem;
+  height: 4.5rem;
+
+  &:focus {
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.navbar-profile-content {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 1rem;
+
+  p {
+    color: $navbarButtonColor;
+  }
+}

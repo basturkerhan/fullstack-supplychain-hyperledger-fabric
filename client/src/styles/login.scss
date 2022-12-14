@@ -1,0 +1,15 @@
+$primary: #ddd;
+$secondary: #fff;
+
+#login {
+    background-image: url("../assets//images/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-box {
+    padding: 4rem;
+    margin: 1rem;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 2rem;
+}

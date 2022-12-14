@@ -1,0 +1,26 @@
+$coldColor: #DBE2EF;
+
+#sidebar {
+  background-color: #DBE2EF;
+}
+
+.main-sidebar-menu-item,
+.sidebar-menu-item {
+  border: 0 !important;
+  background-color: inherit !important;
+
+  .accordion-button {
+    border: 0 !important;
+    background-color: inherit !important;
+    padding-bottom: 0.2rem !important;
+
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.sidebar-menu-item-container .accordion-button::after {
+  display: none;
+}
